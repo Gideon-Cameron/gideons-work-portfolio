@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gideon-cameron.github.io/gideons-work-portfolio/sitemap.xml
