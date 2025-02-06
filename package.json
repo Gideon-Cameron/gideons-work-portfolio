@@ -1,8 +1,8 @@
 {
-  "homepage": "https://gideon-cameron.github.io/gideon-frontend-portfolio",
-  "name": "my-project",
+  "homepage": "https://gideon-cameron.github.io/gideons-work-portfolio",
+  "name": "gideons-work-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -36,6 +36,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
+    "terser": "^5.38.0",
     "vite": "^6.0.5"
   }
 }
