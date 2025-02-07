@@ -1,21 +1,35 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import sitemap from "vite-plugin-sitemap";
+import fs from "fs";
+import path from "path";
 
 export default defineConfig({
-  base: "/", // ✅ Simplified for Netlify (no subdirectory needed)
+  base: "/", // ✅ Suitable for Netlify deployment
   plugins: [
     react(),
     sitemap({
-      hostname: "https://your-netlify-site.netlify.app", // 🔑 Replace with your actual Netlify URL after deployment
+      hostname: "https://your-netlify-site.netlify.app", // 🔑 Replace after deployment
       routes: [
         { url: "/", priority: 1.0 },
         { url: "/more-projects", priority: 0.8 },
       ],
     }),
+    {
+      name: "generate-robots-txt", // ✅ Custom plugin to generate robots.txt
+      closeBundle() {
+        const distDir = path.resolve(__dirname, "dist");
+        const robotsPath = path.join(distDir, "robots.txt");
+
+        if (!fs.existsSync(robotsPath)) {
+          fs.writeFileSync(robotsPath, "User-agent: *\nAllow: /\nSitemap: https://your-netlify-site.netlify.app/sitemap.xml");
+          console.log("✅ robots.txt generated successfully.");
+        }
+      },
+    },
   ],
   build: {
-    assetsDir: "assets", // ✅ Correct asset path handling
+    assetsDir: "assets",
     minify: "terser",
     terserOptions: {
       compress: {
