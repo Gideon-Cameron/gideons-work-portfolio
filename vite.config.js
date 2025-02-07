@@ -2,22 +2,20 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import sitemap from "vite-plugin-sitemap";
 
-const isProduction = process.env.NODE_ENV === "production";
-
 export default defineConfig({
-  base: isProduction ? "/gideons-work-portfolio/" : "/", 
+  base: "/", // ✅ Simplified for Netlify (no subdirectory needed)
   plugins: [
     react(),
     sitemap({
-      hostname: "https://gideon-cameron.github.io",
+      hostname: "https://your-netlify-site.netlify.app", // 🔑 Replace with your actual Netlify URL after deployment
       routes: [
-        { url: "/gideons-work-portfolio/", priority: 1.0 },
-        { url: "/gideons-work-portfolio/more-projects", priority: 0.8 },
+        { url: "/", priority: 1.0 },
+        { url: "/more-projects", priority: 0.8 },
       ],
     }),
   ],
   build: {
-    assetsDir: "assets", // ✅ Ensures correct asset paths
+    assetsDir: "assets", // ✅ Correct asset path handling
     minify: "terser",
     terserOptions: {
       compress: {
