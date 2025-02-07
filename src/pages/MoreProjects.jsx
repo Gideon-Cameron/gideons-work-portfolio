@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar";
 import projectsInfo from "../data/projectsInfo";
 
 const MoreProjects = ({ toggleTheme, theme }) => {
