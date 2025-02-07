@@ -1,24 +1,26 @@
+import { Link } from "react-router-dom";
+
 const Projects = () => {
   // Placeholder project data
   const projectData = [
     {
       id: 1,
       title: "Space Tourism",
-      image: "./src/assets/space-tourism.webp",
+      image: "/assets/space-tourism.webp", // ✅ Correct path for public folder
       description: "Using HTML, CSS, JavaScript, and React to create this visually stunning space tourism website.",
       liveLink: "https://gideon-cameron.github.io/Space-Touris/",
     },
     {
       id: 2,
       title: "Calculator App",
-      image: "./src/assets/Calculator.webp",
+      image: "/assets/Calculator.webp", // ✅ Correct path
       description: "Using HTML, CSS, and JavaScript to create a functioning calculator with changeable themes.",
       liveLink: "https://gideon-cameron.github.io/Calculator-app/",
     },
     {
       id: 3,
       title: "React Weather App",
-      image: "./src/assets/React-Weather-App.webp",
+      image: "/assets/React-Weather-App.webp", // ✅ Correct path
       description: "React weather app that provides real-time weather updates based on your location and lets you search for weather conditions in any city worldwide.",
       liveLink: "https://gideon-cameron.github.io/React-Weather-App/",
     },
@@ -54,9 +56,9 @@ const Projects = () => {
 
         {/* See More Projects Button */}
         <div className="mt-12">
-        <a href="/more-projects" className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 transition">
-          See More Projects
-        </a>
+          <Link to="/more-projects" className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 transition">
+            See More Projects
+          </Link>
         </div>
       </div>
     </section>
