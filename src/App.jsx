@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 import MoreProjects from "./pages/MoreProjects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import { HelmetProvider } from "react-helmet-async";
 
 function App() {
