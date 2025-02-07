@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import MoreProjects from "./pages/MoreProjects";
-import Contact from "./Components/Contact";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { HelmetProvider } from "react-helmet-async";
 
