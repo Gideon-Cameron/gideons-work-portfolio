@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile.webp"; // Placeholder image
+import profilePic from "../assets/Profile.webp"; // Placeholder image
 
 const Hero = () => {
   return (
