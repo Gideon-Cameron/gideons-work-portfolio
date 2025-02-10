@@ -5,29 +5,38 @@ import { FaLinkedin, FaTelegram, FaGithub, FaPhone } from "react-icons/fa";
 const Contact = () => {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
-  const [error, setError] = useState(null); // ✅ Handle errors
+  const [error, setError] = useState(null);
 
-  // Function to send email
+  // Function to send email with validation
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const name = form.current.user_name.value.trim();
+    const email = form.current.user_email.value.trim();
+    const message = form.current.message.value.trim();
+
+    if (!name || !email || !message) {
+      setError("All fields are required.");
+      return;
+    }
+
     emailjs
       .sendForm(
-        "service_2e9zq4f",         // ✅ Your Service ID
-        "template_mq85xh3",        // ✅ Your Template ID
+        "service_2e9zq4f",
+        "template_mq85xh3",
         form.current,
-        "VSey23muaE28V71S_"        // ✅ Your Public API Key
+        "VSey23muaE28V71S_"
       )
       .then(
         (result) => {
           console.log("Email sent:", result.text);
           setMessageSent(true);
-          setError(null);          // ✅ Clear errors on success
+          setError(null);
           form.current.reset();
         },
         (error) => {
           console.error("Email failed to send:", error.text);
-          setError("Failed to send the message. Please try again later."); // ✅ Display error message
+          setError("Failed to send the message. Please try again later.");
         }
       );
   };
@@ -69,7 +78,7 @@ const Contact = () => {
             </button>
           </form>
 
-          {/* ✅ Success & Error Messages */}
+          {/* Success & Error Messages */}
           {messageSent && <p className="mt-4 text-green-500">✅ Message sent successfully!</p>}
           {error && <p className="mt-4 text-red-500">❌ {error}</p>}
         </div>
