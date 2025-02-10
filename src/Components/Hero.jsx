@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col xl:flex-row items-center justify-center text-center xl:text-left px-4 sm:px-6 md:px-20 pt-20 xl:pt-0 bg-gray-100 dark:bg-gray-800"
+      className="min-h-screen flex flex-col xl:flex-row items-center justify-center text-center xl:text-left px-4 sm:px-6 md:px-20 pt-32 sm:pt-36 md:pt-40 xl:pt-0 bg-gray-100 dark:bg-gray-800"
     >
       {/* Image Section */}
       <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 2xl:w-80 2xl:h-80 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-600 shadow-lg mb-6 xl:mb-0 xl:mr-8 transition-transform duration-300 ease-in-out hover:scale-105">
