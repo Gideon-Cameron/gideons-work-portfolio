@@ -1,4 +1,59 @@
-<script>
-    window.location.href = "/gideons-work-portfolio/";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found</title>
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #1a202c;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 15px 0;
+    }
+    a, button {
+      padding: 12px 24px;
+      background-color: #1a202c;
+      color: #ffffff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 1rem;
+    }
+    a:hover, button:hover {
+      background-color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Oops! The page you're looking for doesn't exist.</p>
+  <button onclick="goHome()">Go Back Home</button>
+
+  <script>
+    function goHome() {
+      window.location.href = "/gideons-work-portfolio/";
+    }
+
+    // Automatic redirect after 5 seconds
+    setTimeout(goHome, 5000);
   </script>
-  
+</body>
+</html>
