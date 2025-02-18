@@ -103,7 +103,7 @@ const Contact = () => {
         <div className="mt-10">
           <a
             href="/src/assets/Resume.pdf"
-            download="Gideon_Resume.pdf"
+            download="Gideons_Resume.pdf"
             className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-lg shadow-md hover:bg-gray-600 transition"
           >
             Download Resume
