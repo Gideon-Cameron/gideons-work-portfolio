@@ -47,13 +47,20 @@ const projectsInfo = [
     image: "/assets/Recipe-page.webp",
     description: "Looking for a tasty new recipe to try out? Or maybe you want to impress a friend? Check out the recipe for a simple and tasty omelet.",
     liveLink: "https://gideon-cameron.github.io/Recipe-page/",
-  },
+  }, 
   {
     id: 8,
     title: "Advice Generator",
     image: "/assets/Advice-generator.webp",
     description: "Ever need some good advice? Or want to be the wise one in the group? Check out this advice generator.",
     liveLink: "https://gideon-cameron.github.io/Advice-generator-app/",
+  },
+  {
+    id: 9,
+    title: "Advice Generator",
+    image: "/assets/job-tracker.webp",
+    description: "Job Tracker – A job application tracking system built with React, TypeScript, Firebase, and Tailwind CSS. Alows for job tracking, login, and changing color theams ",
+    liveLink: "https://job-trackerz.netlify.app/",
   },
 ];
 
