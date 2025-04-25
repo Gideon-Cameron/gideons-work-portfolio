@@ -5,6 +5,7 @@
 ![Stars](https://img.shields.io/github/stars/Gideon-Cameron/gideons-work-portfolio?style=social)
 
 
+
 Welcome to my personal portfolio site — a clean, responsive, and accessible showcase of my web development skills, experience, and projects.
 
 **🔗 Live Demo**: [gideons-work-portfolio.netlify.app](https://gideons-work-portfolio.netlify.app/)
