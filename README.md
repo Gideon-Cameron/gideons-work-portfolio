@@ -1,8 +1,8 @@
 # 🧑‍💻 Gideon Cameron – Developer Portfolio
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1043ba4-720f-4949-b64d-a0edd0b54deb/deploy-status)](https://app.netlify.com/sites/gideons-work-portfolio/deploys)
-![License](https://img.shields.io/github/license/Gideon-Cameron/Developer-Portfolio)
-![Stars](https://img.shields.io/github/stars/Gideon-Cameron/Developer-Portfolio?style=social)
+![License](https://img.shields.io/github/license/Gideon-Cameron/gideons-work-portfolio)
+![Stars](https://img.shields.io/github/stars/Gideon-Cameron/gideons-work-portfolio?style=social)
 
 
 Welcome to my personal portfolio site — a clean, responsive, and accessible showcase of my web development skills, experience, and projects.
